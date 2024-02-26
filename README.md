@@ -6,6 +6,9 @@ Its purpose is to allow users to read about campus events and pull from our publ
 
 ### Getting Started with the Campus Pulse Frontend
 
-* Clone the Campus Pulse repo
-* Ensure flask, flask-restful and react.js are installed in your working directory.
-* Navigate to the frontend directory and run: npm start
+* Clone this repo
+* Ensure the backend API (in the `api` repo) is set up and running
+* Run: `npm start`
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
