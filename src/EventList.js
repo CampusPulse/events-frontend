@@ -39,7 +39,7 @@ const EventCard = ({ event }) => {
       <p>
         <strong>End:</strong> {formatDate(end)}
       </p>
-      {location && <p><strong>Location:</strong> {location}</p>}
+      {location && <p><strong>Location:</strong> {location.street}, {location.city}, {location.state}</p>}
       {description && <p><strong>Description:</strong> {description}</p>}
     </li>
   );
