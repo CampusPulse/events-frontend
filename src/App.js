@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await fetch('/campus-pulse-api');
+        const response = await fetch('http://localhost:5000/campus-pulse-api');
         if (!response.ok) {
           throw new Error('Failed to fetch events');
         }
