@@ -9,8 +9,11 @@ function App() {
 
   useEffect(() => {
     const fetchEvents = async () => {
+
+      const baseURL = process.env.API_URL ?? "http://localhost:5000/v0";
+
       try {
-        const response = await fetch('http://localhost:5000/campus-pulse-api');
+        const response = await fetch(baseURL + '/public.json');
         if (!response.ok) {
           throw new Error('Failed to fetch events');
         }
