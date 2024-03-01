@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchEvents = async () => {
 
-      const baseURL = process.env.API_URL ?? "http://localhost:5000/v0";
+      const baseURL = process.env.REACT_APP_API_URL || "http://localhost:5000/v0";
 
       try {
         const response = await fetch(baseURL + '/public.json');
