@@ -31,6 +31,8 @@ function App() {
 
   return (
     <div>
+      <h1>Welcome to CampusPulse!</h1>
+      <p class="content">This is a student-built application that aims to combine several sources of events that are happening around you into a single convenient feed, no more flooding of your inbox with newsletters!</p>
       {events.length === 0 ? (
           <p>Loading...</p>
         ) : (<EventList events={events}></EventList>) }
