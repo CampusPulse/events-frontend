@@ -47,7 +47,7 @@ const EventCard = ({ event }) => {
         <strong>Time:</strong> {formatDate(start)} - {formatTime(end)}
       </p>
       {host && <p><strong>Host:</strong> {host}</p>}
-      {source_link && <p><strong>Link:</strong> {source_link}</p>}
+      {source_link && <p><strong>Link:</strong> <a href={source_link}>{source_link}</a></p>}
       <details>
         {location && <p><strong>Location:</strong> {location.street}, {location.city}, {location.state}</p>}
         {description && <p><strong>Description:</strong> {description}</p>}
