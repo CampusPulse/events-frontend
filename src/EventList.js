@@ -15,7 +15,9 @@ const EventList = ({ events }) => {
 };
 
 const EventCard = ({ event }) => {
-  const { title, start, end, location, description, host } = event;
+  const { title, start, end, location, description, host, source } = event;
+
+  const {source_link} = source
 
   const formatDate = (dateString) => {
     const options = {
@@ -45,7 +47,7 @@ const EventCard = ({ event }) => {
         <strong>Time:</strong> {formatDate(start)} - {formatTime(end)}
       </p>
       {host && <p><strong>Host:</strong> {host}</p>}
-
+      {source_link && <p><strong>Link:</strong> {source_link}</p>}
       <details>
         {location && <p><strong>Location:</strong> {location.street}, {location.city}, {location.state}</p>}
         {description && <p><strong>Description:</strong> {description}</p>}
