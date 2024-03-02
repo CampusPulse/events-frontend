@@ -25,7 +25,14 @@ const EventCard = ({ event }) => {
       day: 'numeric',
       hour: 'numeric',
       minute: 'numeric',
-      second: 'numeric',
+    };
+    return new Date(dateString).toLocaleString('en-US', options);
+  };
+
+  const formatTime = (dateString) => {
+    const options = {
+      hour: 'numeric',
+      minute: 'numeric',
       timeZoneName: 'short',
     };
     return new Date(dateString).toLocaleString('en-US', options);
@@ -35,10 +42,7 @@ const EventCard = ({ event }) => {
     <li style={{ border: '1px solid #ddd', padding: '10px', marginBottom: '10px' }}>
       <h3>{title}</h3>
       <p>
-        <strong>Start:</strong> {formatDate(start)}
-      </p>
-      <p>
-        <strong>End:</strong> {formatDate(end)}
+        <strong>Time:</strong> {formatDate(start)} - {formatTime(end)}
       </p>
       {location && <p><strong>Location:</strong> {location.street}, {location.city}, {location.state}</p>}
       {description && <p><strong>Description:</strong> {description}</p>}
