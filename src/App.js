@@ -38,6 +38,15 @@ function App() {
 
       <p class="content">This project is <a href="https://github.com/CampusPulse/">open source</a>. Please feel free to contribute if you find new sources of events to include. There are plans to add browsing events by categories, as well as some fun tools for helping you find events if you are ever in need of something new to do.</p>
 
+
+      <p class="content">If you are interested in building your own tools on top of this data, the API endpoints are currently:
+        <ul>
+          <li>https://api.campuspulse.meepme.app/v0/public.json</li>
+          <li>https://api.campuspulse.meepme.app/v0/public.ics</li>
+        </ul>
+        As the project is still fairly new, it is not recommended to rely on this data as things may change, be slow, or go down unexpectedly.
+      </p>
+
       {events.length === 0 ? (
           <p>Loading...</p>
         ) : (<EventList events={events}></EventList>) }
