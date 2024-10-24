@@ -41,8 +41,8 @@ function App() {
 
       <p class="content">If you are interested in building your own tools on top of this data, the API endpoints are currently:
         <ul>
-          <li>https://api.campuspulse.meepme.app/v0/public.json</li>
-          <li>https://api.campuspulse.meepme.app/v0/public.ics</li>
+          <li>{process.env.REACT_APP_API_URL}/public.json</li>
+          <li>{process.env.REACT_APP_API_URL}/public.ics</li>
         </ul>
         As the project is still fairly new, it is not recommended to rely on this data as things may change, be slow, or go down unexpectedly.
       </p>
