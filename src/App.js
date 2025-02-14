@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div>
-      <h1>Welcome to CampusPulse!</h1>
+      <h1>Welcome to CampusPulse Events!</h1>
       <p class="content">This is a student-built application that aims to be a proof of concept and minimal viable interface for a project that combines several sources of events that are happening around you into a single convenient feed, no more flooding of your inbox with newsletters!</p>
 
       <p class="content">Currently this app contains only public data from several sources, including campusgroups, university events, athletics, etc.<br/>If you want to ensure your event makes it to the list, be sure it is part of one of these feeds and is marked as "public".</p>
