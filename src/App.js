@@ -31,6 +31,7 @@ function App() {
 
   return (
     <div>
+      <a href="https://campuspulse.app">&lt; Back to main site</a>
       <h1>Welcome to CampusPulse Events!</h1>
       <p class="content">This is a student-built application that aims to be a proof of concept and minimal viable interface for a project that combines several sources of events that are happening around you into a single convenient feed, no more flooding of your inbox with newsletters!</p>
 
